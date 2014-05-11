@@ -1,0 +1,59 @@
+{
+  "name": "hoodie-template",
+  "version": "0.0.0",
+  "author": "Stephan Bönnemann",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/boennemann/hoodie-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/boennemann/hoodie-template/issues"
+  },
+  "type": "app",
+  "dependencies": {
+    "hoodie-server": "^0.9.24",
+    "hoodie-plugin-appconfig": "^0.2.0",
+    "hoodie-plugin-email": "^0.1.1",
+    "hoodie-plugin-users": "^0.1.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-bump": "^0.0.13",
+    "grunt-connect-proxy": "^0.1.10",
+    "grunt-continue": "^0.0.1",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-contrib-cssmin": "^0.9.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-less": "^0.11.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.0",
+    "grunt-hoodie": "^0.3.0",
+    "grunt-manifest": "^0.4.0",
+    "grunt-rev": "^0.1.0",
+    "grunt-usemin": "^2.1.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "subdomain": "hoodie-template",
+  "domains": [
+    "admin.hoodie-template.jit.su",
+    "couch.hoodie-template.jit.su"
+  ],
+  "scripts": {
+    "start": "node node_modules/hoodie-server/bin/start",
+    "test": "grunt"
+  },
+  "hoodie": {
+    "plugins": [
+      "hoodie-plugin-appconfig",
+      "hoodie-plugin-email",
+      "hoodie-plugin-users"
+    ]
+  }
+}

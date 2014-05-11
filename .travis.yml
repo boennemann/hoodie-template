@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '0.10'
+before_script:
+- npm install -g bower grunt-cli
+- bower install
+notifications:
+  email: false
+# deploy:
+#   provider: nodejitsu
+#   skip_cleanup: true
+#   user: boennemann
+#   api_key:
+#     secure: YOURAPIKEY
+#   on:
+#     repo: boennemann/hoodie-template
+#     tags: true
