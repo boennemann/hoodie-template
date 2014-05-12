@@ -1,7 +1,7 @@
 {
-  "name": "zentodone",
+  "name": "hoodie-template",
   "version": "0.0.5-2",
   "dependencies": {
-    "jquery": "^2.1.1"
+    "my-first-hoodie": "git@github.com:hoodiehq/my-first-hoodie.git#^1.0.17"
   }
 }

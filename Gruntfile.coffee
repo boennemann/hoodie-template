@@ -114,6 +114,7 @@ module.exports = (grunt) ->
         src: [
           'scripts/*.js'
           'styles/*.css'
+          'img/*.{gif,png,jpg}'
         ]
         dest: '<%= app.dist %>/manifest.appcache'
 
@@ -125,6 +126,9 @@ module.exports = (grunt) ->
     copy:
       dist:
         files: [
+          src: ['<%= app.app %>/bower_components/my-first-hoodie/www/assets/img/pattern_130.gif']
+          dest: '<%= app.dist %>/img/pattern_130.gif'
+        ,
           expand: true
           dot: true
           cwd: '<%= app.app %>'
